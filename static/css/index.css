@@ -30,3 +30,6 @@ main{
 #carouselExampleControls img{
     height: 300px;
 }
+a{
+    text-decoration: none;
+}
