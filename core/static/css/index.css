@@ -33,3 +33,10 @@ main{
 #carouselExampleControls img{
     height: 300px;
 }
+
+.servicos a{
+    background-color: rgb(54, 119, 61);
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+}

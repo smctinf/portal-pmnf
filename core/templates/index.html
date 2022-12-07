@@ -1,5 +1,5 @@
 {% extends 'template.html' %}
-{% block title %}Portal{% endblock %}
+{% block title %}{{titulo}}{% endblock %}
 {% block css %}
 <link rel="stylesheet" href="/static/css/index.css">
 {% endblock %}
@@ -60,39 +60,39 @@
           <div class="col d-flex flex-column">
             <h5 class="mt-5">SERVIÇOS</h5>
             <div class="row">
-              <div class="col px-5 d-flex pt-4">
-                <a href="#" class="bg-light border d-flex me-auto" style="height: 80px; width: 42Vw;">
+              <div class="col servicos px-5 d-flex pt-4">
+                <a href="#" class="border d-flex me-auto" style="height: 80px; width: 42Vw;">
                   <span class="m-auto">Desenvolve NF</span>
                 </a>
-                <a href="#" class="px-5 bg-light border d-flex ms-auto" style="height: 80px; width: 42vw;">
+                <a href="#" class="px-5 border d-flex ms-auto" style="height: 80px; width: 42vw;">
                   <span class="m-auto">Casa do Trabalhador</span>
                 </a>
               </div>
             </div>
             <div class="row">
-              <div class="col text-center px-5 d-flex pt-4 pb-5">
-                <a href="#" class="px-2 bg-light border d-flex m-auto" style="height: 80px; width: 10vw;">
+              <div class="col servicos text-center px-5 d-flex pt-4 pb-5">
+                <a href="#" class="px-2 border d-flex m-auto" style="height: 80px; width: 10vw;">
                   <span class="m-auto">Senhas de Turismo</span>
                 </a>
-                <a href="#" class="px-2 bg-light border d-flex m-auto" style="height: 80px; width: 10vw;">
+                <a href="#" class="px-2 border d-flex m-auto" style="height: 80px; width: 10vw;">
                   <span class="m-auto">Mapeamento Cultural</span>
                 </a>
-                <a href="#" class="px-2 bg-light border d-flex m-auto" style="height: 80px; width: 10vw;">
+                <a href="#" class="px-2 border d-flex m-auto" style="height: 80px; width: 10vw;">
                   <span class="m-auto">Oficina Escola</span>
                 </a>
-                <a href="#" class="px-2 bg-light border d-flex m-auto" style="height: 80px; width: 10vw;">
+                <a href="#" class="px-2 border d-flex m-auto" style="height: 80px; width: 10vw;">
                   <span class="m-auto">Cursos Livres UERJ</span>
                 </a>
-                <a href="#" class="px-2 bg-light border d-flex m-auto" style="height: 80px; width: 10vw;">
+                <a href="#" class="px-2 border d-flex m-auto" style="height: 80px; width: 10vw;">
                   <span class="m-auto">Cursos Livres CEVEST</span>
                 </a>
-                <a href="#" class="px-2 bg-light border d-flex m-auto" style="height: 80px; width: 10vw;">
+                <a href="#" class="px-2 border d-flex m-auto" style="height: 80px; width: 10vw;">
                   <span class="m-auto">Portal COVID</span>
                 </a>
-                <a href="#" class="px-2 bg-light border d-flex m-auto" style="height: 80px; width: 10vw;">
+                <a href="#" class="px-2 border d-flex m-auto" style="height: 80px; width: 10vw;">
                   <span class="m-auto">Escola Enfermagem</span>
                 </a>
-                <a href="#" class="px-2 bg-light border d-flex m-auto" style="height: 80px; width: 10vw;">
+                <a href="#" class="px-2 border d-flex m-auto" style="height: 80px; width: 10vw;">
                   <span class="m-auto">Iluminação Pública</span>
                 </a>
               </div>
@@ -102,7 +102,7 @@
             <h5 class="mt-5">SERVIÇOS POR SECRETARIA</h5>
             <div class="row px-5 pt-4">
               <div class="col">
-                <h4 class="px-4 text-success">IPTU</h4>
+                <h4 class="px-4 text-success">Cultura</h4>
                 <ul style="list-style: none;">
                   <li>
                     <a href="#">IPTU 2022</a>
@@ -113,7 +113,7 @@
                 </ul>
               </div>
               <div class="col">
-                <h4 class="px-4 text-success">LIMPEZA URBANA</h4>
+                <h4 class="px-4 text-success">Turismo</h4>
                 <ul style="list-style: none;">
                   <li>
                     <a href="#">IPTU 2022</a>
@@ -124,7 +124,7 @@
                 </ul>
               </div>
               <div class="col">
-                <h4 class="px-4 text-success">DÍVIDA ATIVA</h4>
+                <h4 class="px-4 text-success">Ciência e Tecnologia</h4>
                 <ul style="list-style: none;">
                   <li>
                     <a href="#">IPTU 2022</a>
@@ -135,7 +135,53 @@
                 </ul>
               </div>
               <div class="col">
-                <h4 class="px-4 text-success">ORDEM PÚBLICA</h4>
+                <h4 class="px-4 text-success">Finanças</h4>
+                <ul style="list-style: none;">
+                  <li>
+                    <a href="#">IPTU 2022</a>
+                  </li>
+                  <li>
+                    <a href="#">IPTU - Anos anteriores</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row px-5 pt-4">
+              <div class="col">
+                <h4 class="px-4 text-success">Educação</h4>
+                <ul style="list-style: none;">
+                  <li>
+                    <a href="#">IPTU 2022</a>
+                  </li>
+                  <li>
+                    <a href="#">IPTU - Anos anteriores</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h4 class="px-4 text-success">Serviço Público</h4>
+                <ul style="list-style: none;">
+                  <li>
+                    <a href="#">IPTU 2022</a>
+                  </li>
+                  <li>
+                    <a href="#">IPTU - Anos anteriores</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h4 class="px-4 text-success">Defesa Civil</h4>
+                <ul style="list-style: none;">
+                  <li>
+                    <a href="#">IPTU 2022</a>
+                  </li>
+                  <li>
+                    <a href="#">IPTU - Anos anteriores</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h4 class="px-4 text-success">Obras Públicas</h4>
                 <ul style="list-style: none;">
                   <li>
                     <a href="#">IPTU 2022</a>
