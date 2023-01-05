@@ -33,7 +33,7 @@ DEBUG = env_vars['debug_mode']
 SECRET_KEY = env_vars['django_secret_key']
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 try:
     hCAPTCHA_PUBLIC_KEY = env_vars['hCAPTCHA_Public_Key']

@@ -4,8 +4,17 @@ html, body{
 :root{
     --main-color: #ffffff;
 }
+html{
+  background-image: url('/static/images/bg.webp');
+  background-size: cover;
+}
 body{
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+header{
+  background-color: white;
 }
 #preloading{    
     padding: 12px 20px;
@@ -19,6 +28,18 @@ body{
     max-width:  229px;
 }
 
+@media (max-width: 990px)
+{
+  .container-fluid .navbar-brand{
+    margin: auto;
+  }
+  #login-button{
+    margin: auto !important;
+  }
+  nav .navbar-toggler{
+    display: none !important;
+  }
+}
 footer{
     background-color: white;
 }
@@ -66,7 +87,7 @@ footer a{
     color: white;
 }
 
-h1{
+h1, h2, h3, h4{
     font-family: 'Roboto', sans-serif;
     
 }
@@ -180,4 +201,18 @@ h1{
 }
 .modaladm .first-text{
   text-align: center;
+}
+#cont_ab590e303c18a256c074a3b0ed5b3c1b{
+  border: none !important;
+}
+.new29 .wlink .slink{
+  font-size: 1pt !important;
+  display: none !important;
+}
+.new29 #wlink .slink{
+  font-size: 1pt !important;
+  display: none !important;
+}
+.nomP{
+  display: none !important;
 }
