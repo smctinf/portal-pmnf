@@ -56,7 +56,8 @@
                       <div class="row">
                         <div class="col mb-4 servicos d-flex flex-wrap justify-content-between pt-2 pb-4">                            
                             {% for i in servicos %}
-                              <a href="{{i.link}}" target="_blank" class="px-5 border d-flex" style="height: 80px;">
+                              <a href="{{i.link}}" target="_blank" class="px-5 d-flex" style="height: 80px;">
+                                <img class="img-fluid my-auto" style="height: 60px;" src="{% static 'images/logo.png' %}" alt="">
                                 <span class="m-auto">{{i.nome}}</span>
                               </a>  
                             {% endfor %}                            

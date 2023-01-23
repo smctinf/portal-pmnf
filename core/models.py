@@ -12,3 +12,5 @@ class Servico(models.Model):
     def __str__(self):
         return '%s' % (self.nome)
 
+    class Meta:
+        app_label = 'core'

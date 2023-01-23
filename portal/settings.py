@@ -76,6 +76,7 @@ INSTALLED_APPS = [
     'fontawesomefree',
     #apps
     'core',
+    'authentication'
 ]
 
 MIDDLEWARE = [
@@ -112,7 +113,7 @@ WSGI_APPLICATION = 'portal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
+DATABASES = {   
     'default': {
         'ENGINE': 'django.db.backends.mysql',
 
@@ -122,10 +123,25 @@ DATABASES = {
         'USER': db_user,
         'PASSWORD': db_passwd,
         'HOST': db_host,
+    },
+    'auth_db': {
+        'ENGINE': 'django.db.backends.mysql',
+        
+        'NAME': 'users',
+        'PORT': '',
+  
+        'USER': db_user,
+        'PASSWORD': db_passwd,
+        'HOST': db_host,    
     }
 }
 
-
+AUTH_USER_MODEL = 'authentication.User'
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'authentication_app.backends.AuthBackend',
+]
+DATABASE_ROUTERS = ['authentication.routers.AuthRouter']
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
